@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HAN - ICA - WebTech - I1H Blok2 2017/2018</title>
+    <link rel='stylesheet' href='lib/bulma.css' />
+    <link rel='stylesheet' href='lib/fullcalendar.min.css' />
+    <style>
+        .fc-event-title {
+            padding: 0 1px;
+            float: left;
+            clear: none;
+            margin-right: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 style="font-weight: bold;">Agenda Webtech I1H</h1>
+        <div id="calendar"></div>
+        <br/>
+        <a href="old-skool.html">Old Skool iFrame</a>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/moment.js"></script>
+        <script src="lib/fullcalendar.js"></script>
+        <script src="lib/gcal.min.js"></script>
+        <script>
+            let apiKey = "AIzaSyACa58ZAplftSeHsN4UAUN3HZoHjZ12Cs8"
+            let googleCalendarId = "4k00fj99ngutnlnmom2mpfofgg@group.calendar.google.com";
+            let calendarSettings = {
+                googleCalendarApiKey: apiKey,
+                events: { googleCalendarId: googleCalendarId }
+            };
+            $(document).ready(function() {
+                $('#calendar').fullCalendar(calendarSettings);
+            });
+        </script>
+    </body>
+</html>
