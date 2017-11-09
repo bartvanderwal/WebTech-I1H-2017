@@ -35,7 +35,11 @@
             let googleCalendarId = "4k00fj99ngutnlnmom2mpfofgg@group.calendar.google.com";
             let calendarSettings = {
                 googleCalendarApiKey: apiKey,
-                events: { googleCalendarId: googleCalendarId }
+                events: { googleCalendarId: googleCalendarId },
+                validRange: {
+                    start: '2017-11-13',
+                    end: '2018-01-21'
+                }
             };
             $(document).ready(function() {
                 $('#calendar').fullCalendar(calendarSettings);
