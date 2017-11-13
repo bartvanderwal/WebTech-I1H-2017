@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Les 1 - WebTech</title>
+</head>
+<body>
+  <h1>Les 1 - ISM Workshop - Basic TCP - HTTP</h1>
+  <ul>
+    <li>Download <a href="PacketTracer.zip" target="_blank">PacketTracer.zip</a></li>
+    <li>Download <a href="PacketTracer.z01" target="_blank">PacketTracer.z01</a></li>
+    <li>Download <a href="PacketTracer.z02" target="_blank">PacketTracer.z02</a></li>
+    <li>Download <a href="WebtechAssignment.pkt" target="_blank">WebtechAssignment.pkt</a></li>    
+    <li>Pak de .zip uit</li>
+    <li>Dubbelklik op de uitgepakte .exe om Packet Tracer te installeren</li>    
+    <li>Volg de verdere stappen uit de Powerpoint met 'prerequisites' voor Les 1</li>        
+  </ul>
+  <ul>
+    <li>Download <a href="https://www.virtualbox.org/" target="_blank">virtualbox.org</a></li>
+  </ul>
+  <h2>Docker</h2>
+  <p>Dit zou evt. ook moeten werken voor teh Docker loverz:</p>
+  <p>Bron: https://github.com/somatorio/docker-packet-tracer</p>
+  <pre>
+    docker run -it --rm \
+      -e DISPLAY=unix$DISPLAY \
+      -v /tmp/.X11-unix/:/tmp/.X11-unix/ \
+      -v $HOME/.packettracer:/root/pt \
+      somatorio/packet-tracer  
+  </pre>
+</body>
+</html>
