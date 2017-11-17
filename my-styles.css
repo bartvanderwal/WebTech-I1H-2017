@@ -1,0 +1,22 @@
+/* Overschrijven default fullcalendar stijl . */
+
+/* Maak multiline beschrijving zichtbaar. */
+.fc-day-grid-event .fc-content {
+    white-space: normal;
+}
+body {
+    margin: 15px 40px;
+    padding: 10px 15px;
+}
+
+/* Einde overschrijven default fullcalendar stijl. */
+
+/* Overschrijven bulma stijlen. */
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+/* Einde overschrijven bulma stijlen. */
+
