@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WebTech | Les 4 </title>
+        <link rel="stylesheet" href="../lib/bulma.css" />
+        <link rel="stylesheet" href="../my-styles.css" />
+    </head>
+    <body>
+        <h1>Les 4 - Selectors, Float, Semantische HTML</h1>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.pluralsight.com/resource-center/infographics/discover-the-science-behind-forgetting-and-conquer-it">Spaced repetition.</a></li>
+            <li><a href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">Kinds of content</a></li>
+        </ul>
+        <h2>Key take aways Semantische tags (Sander Leer)</h2>
+        <ul>
+            <li>Gebruik van deprecated HTML elementen (<b>, <i>, <blink> ;) zijn uit den boze omdat ze iets zeggen over de vormgeving en niet over de inhoud.</li>   
+            <li>Gebruik waar mogelijk het juiste HTML element voor wat je wilt doen.</li>
+            <li>Namen van classes die bestaande HTML elementen beschrijven moet je als waarschuwing zien dat je waarschijnlijk een ander HTML element kunt gebruiken. Bijvoorbeeld:
+                <ul>
+                    <li>&lt;p class="heading-1"&gt; moet waarschijnlijk zijn &lt;h1&gt;,</li>
+                    <li>&lt;span class="important"&gt; moet waarschijnlijk zijn &lt;strong&gt;,</li>
+                    <li>&lt;div class="footer-content"&gt; moet waarschijnlijk zijn &lt;footer&gt;.</li> 
+                </ul>
+            </li>
+            </li>Namen van classes beschrijven nooit de vormgeving maar altijd de intentie (of semantiek). Bijvoorbeeld:
+                <ul>
+                    <li>&lt;p class="red"&gt; moet waarschijnlijk zijn &lt;p class="warning"&gt;,</li>
+                    <li>&lt;aside class="right"> moet waarschijnlijk zijn <aside class="jobs"></li></ul>
+                    <li>Gebruik van id’s voor vormgeving met CSS is in 99% van de gevallen niet noodzakelijk (als in <p id="one"> en #one { … }).</li>
+                    <li>Gebruik van !important in je CSS is in 99% van de gevallen niet noodzakelijk (als in p { color: green !important;}).</li>
+                    <li>Zorg dat – naast valide HTML en CSS – ook je Sectioning content en Outline op orde is.</li>            
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
