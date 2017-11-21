@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/foundation.min.css" />
+    <link_ rel="stylesheet" href="../my-styles.css" />
+    <title>WebTech - Les 5</title>
+</head>
+<body>
+    <style>
+        nav ul {
+            display: none;
+        }
+
+        nav:hover ul {
+            display: block;
+        }
+    </style>
+    <header>
+        <h1>Les 4: Flexbox en Advanced Positioning</h1>
+        <nav>
+            <h3>1. Menu</h3>
+            <ul>
+                <li><a href="#teh-footer">To footer (<code>name</code> attr + URL fragment)</a></li>
+                <li><a href="#6-down">To '6 down, 7 to go'</a></li>                   
+                <li><a href="http://lmgtfy.com/?q=random+number+generator" target="_blank">Random number generator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        .opdrachten ul {
+            overflow: hidden;
+            height: 0;
+            transition: height 2s;
+        }
+
+        .opdrachten:hover ul {
+            height: 150px !important;
+            transition: height 2s;
+        }
+    </style>
+    <section class="opdrachten">
+        <h3>2. Student demo's</h3>
+        <ul>
+            <li><h5>(niet weer Refai, Ugur, Sander G. of Wout of Ryan)</h5></li>
+            <li>footer met een &copy;... + vervangen &lt;div&gt; door &lt;main&gt; (ook CSS)</li>
+            <li>h1 selector veranderen naar combi-selector zodat deze alleen <em>&;t;h1&gt;</em> in <em>&lt;header&gt;</em> selecteert</li>
+            <li>classes <code>links</code>, <code>rechts</code> en <code>clear</code></li>
+            <li>menu-items naast elkaar ... met een beetje afstand ertussen + kleur van hyperlink pas bij achtergrondkleur header</li>            
+        </ul>
+    </section>
+    <main>
+        <section id="6-down">
+        <figure>
+            <img src="7-down-6-to-go.jpg" alt="7 down, 6 to go!" style="width: 200px;">
+            <figcaption>Interneting is hard? 7 down - 6 to go!</figcaption>
+        </figure>
+    </section>
+    </main>    
+    <footer id="teh-footer">
+        &copy <span id="currentYear">2017</span> - Me, myself and I
+    </footer>
+</body>
+</html>
