@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server .",
-    "prestart": "mkdir -p lib && cp node_modules/fullcalendar/dist/*.*  lib/ && cp node_modules/jquery/dist/jquery.min.js lib/ && cp node_modules/moment/moment.js lib/ && cp node_modules/bulma/css/bulma.css lib/ && cp node_modules/fullcalendar/dist/gcal.min.js lib/ && cp node_modules/fullcalendar/dist/locale/nl.js lib/",
+    "prestart": "mkdir -p lib && cp node_modules/fullcalendar/dist/*.*  lib/ && cp node_modules/jquery/dist/jquery.min.js lib/ && cp node_modules/moment/moment.js lib/ && cp node_modules/foundation-sites/dist/css/foundation.min.css lib/ && cp node_modules/fullcalendar/dist/gcal.min.js lib/ && cp node_modules/fullcalendar/dist/locale/nl.js lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
