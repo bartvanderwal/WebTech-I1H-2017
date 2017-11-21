@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Competenties | WebTech</title>
+        <link rel="stylesheet" href="lib/bulma.css" />
+        <link rel="stylesheet" href="my-styles.css" />
+    </head>
+    <body>
+        <article class="competenties">
+            <style>
+                .competenties li { margin: 5px 10px; }
+                .competenties figcaption {
+                    text-align: right;
+                }
+            </style>    
+            <header>
+                <h2>WebTech Competenties</h2>
+                <figure>
+                    <img src="/pics/muscle.png" alt="Powerrr" width="200" />
+                    <figcaption>Powerrr!!</figcaption>
+                </figure>
+                <address>HAN ICA WebTech; <a href="https://www.google.nl/maps/@51.9872371,5.8811225,12z/data=!3m1!4b1!4m2!7m1!2e1" target="blank" alt="Ruitenberglaan 26, Arnhem">Ruitenberglaan 26, Arnhem</a></address>                
+            </header>
+            <input type="button" onClick="clearAll()">Clear all</input>
+            <input type="button" onClick="alert('Testing')">Set all</input>            
+            <ul>
+                <li>
+                    <input type="checkbox" id="wt1" />
+                    <label for="wt1">WT-1</label>
+                    <span>De student heeft kennis van de <strong>basiselementen van HTML5 en CSS3</strong>.</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt2" />
+                    <label for="wt2">WT-2</label>                    
+                    <span>De student kan <strong>statische webpagina’s</strong> realiseren met HTML5 en CSS3 overeenkomstig een gegeven <em>ontwerp</em>.</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt3" />
+                    <label for="wt3">WT-3</label>                    
+                    <span>De student is in staat een <strong>ontwikkelomgeving</strong> in te richten waarmee een website ontwikkel<strike>t</strike>d, getest en gepubliceerd kan worden naar een webserver.</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt4" />
+                    <label for="wt4">WT-4</label>
+                    <span>De student ontwerpt in <em>groepsverband</em> een website volgens algemene <em>ontwerpprincipes</em>. De groep kiest een <em>doelgroep</em>, bedenkt een thema daarvoor en werkt dit uit in een <strong>ontwerpdocument</strong>.</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt5" />
+                    <label for="wt5">WT-5</label>
+                    <span>De student heeft kennis van <em>server-side web development</em> met gebruik van <strong>PHP en MSSQL</strong> en kan <em>dynamische webpagina’s</em> realiseren met HTML5, CSS3 en PHP.</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt6" />
+                    <label for="wt6">WT-6</label>
+                    <span>De student heeft kennis van de <strong>TCP/IP-V4 en HTTP</strong> protocollen en kan de werking verklaren.</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt7" />
+                    <label for="wt7">WT-7</label>
+                    <span>De student vertaalt gegeven requirements naar een <strong>3-tier webapplicatie</strong> (Browser, WebServer, DatabaseServer).</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="wt7" />
+                    <label for="wt8">WT-8</label>
+                    <span>De student <strong>controleert</strong> de gerealiseerde webapplicatie op kwaliteit en gerealiseerde functionaliteiten en is zich bewust van beveiligingsvraagstukken.</span>
+                </li>    
+            </ul>
+        </article>
+        <footer>
+            <p>That's all folks!</p>
+            <a href="/">Home</a>
+        </footer>
+        <script>
+            const doStuff = () => {
+                let aantalCompetenties = 8
+                let inputs = document.querySelectorAll('input[type=checkbox]');
+
+                const initialiseerCompetenties = () => {
+                    // Haal eventuele waarden uit localstorage.
+                    for (competentie = 1; competentie < aantalCompetenties; competentie++) {
+                        let itemKey = `wt${competentie}`
+                        let checkbox = document.getElementById(itemKey)
+                        let isChecked = localStorage.getItem(itemKey)
+                        checkbox.checked = isChecked;
+                    }
+
+                    // Hang event handlers aan de checkboxes om gebruikers wijzigingen direct op te slaan in localStorage.
+                    for(input of inputs) {
+                        input.addEventListener('change', (box) => {
+                            localStorage.setItem(input.id, box.currentTarget.checked);
+                        });
+                    }
+                }
+
+                const clearAll = () => {
+                    if (alert(`Weet je zeker dat je alle competenties wilt resetten?`)) {
+                        setAll(false);
+                    }
+                }
+                const checkAll = () => {
+                    if (alert(`Weet je zeker dat je alle competenties wilt afvinken?`)) {
+                        setAll(true);
+                    }
+                }
+                const setAll = (value) => {
+                    for(input of inputs) {
+                        input.checked = value;
+                        localStorage.setItem(input.id, input.checked);
+                    }
+                }
+
+                initialiseerCompetenties();
+            }
+
+            window.onload = doStuff
+        </script>
+    </body>
+</html>

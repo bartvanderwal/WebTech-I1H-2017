@@ -14,9 +14,26 @@ body {
 /* Overschrijven bulma stijlen. */
 h1 {
     font-size: 2em;
+    margin: 10px;    
 }
 h2 {
     font-size: 1.6em;
 }
 /* Einde overschrijven bulma stijlen. */
 
+ul li {
+    list-style-type: none;
+}
+label {
+    color: blue;
+}
+figure {
+    float: right;
+}
+figcaption {
+    font-style: italic;
+}
+
+footer {
+    margin-top: 20px;
+}
