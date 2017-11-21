@@ -84,7 +84,7 @@
 
                 const initialiseer = () => {
                     // Haal eventuele waarden uit localstorage.
-                    for (competentie = 1; competentie < aantalCompetenties; competentie++) {
+                    for (competentie = 1; competentie <= aantalCompetenties; competentie++) {
                         let itemKey = `wt${competentie}`
                         let checkbox = document.getElementById(itemKey)
                         let isChecked = localStorage.getItem(itemKey)
