@@ -22,7 +22,7 @@ h2 {
 /* Einde overschrijven bulma stijlen. */
 
 ul li {
-    l-ist-style-type: none;
+    list-style-type: initial;
 }
 label {
     color: blue;
