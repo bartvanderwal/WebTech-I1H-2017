@@ -9,59 +9,96 @@
     <title>WebTech - Les 5</title>
 </head>
 <body>
-    <style>
-        nav ul {
-            display: none;
-        }
-
-        nav:hover ul {
-            display: block;
-        }
-    </style>
     <header>
+        <style>
+            nav ul {
+                display: none;
+            }
+    
+            nav:hover ul {
+                display: block;
+            }
+        </style>    
         <h1>Les 5: Flexbox en Advanced Positioning</h1>
         <nav>
             <h3>1. Menu</h3>
             <ul>
                 <li><a href="#teh-footer">To footer (<code>name</code> attr + URL fragment)</a></li>
-                <li><a href="#6-down">To '6 down, 7 to go'</a></li>                   
+                <li><a href="#six-down">To '6 down, 7 to go'</a></li>                   
                 <li><a href="http://lmgtfy.com/?q=random+number+generator" target="_blank">Random number generator</a></li>
             </ul>
         </nav>
     </header>
-    <style>
-        .opdrachten ul {
-            list-style-type: disc !important;
-            overflow: hidden;
-            height: 0;
-            transition: height 2s;
-        }
-
-        .demos:hover ul {
-            height: 150px !important;
-            transition: height 2s;
-        }
-        .demos ul li {
-            margin: 0px 25px;
-        }
-    </style>
-    <section class="demos">
-        <h3>2. Student demo's</h3>
-        <ul>
-            <li style="list-style-type: none;"><h5>(niet weer Refai, Ugur, Sander G., Wout of Ryan)</h5></li>
-            <li>footer met een &copy;... + vervangen <code>&lt;div&gt;</code> door <code>&lt;main&gt;</code> (ook CSS)</li>
-            <li>h1 selector veranderen naar combi-selector zodat deze alleen <em>&lt;h1&gt;</em> in <em>&lt;header&gt;</em> selecteert</li>
-            <li>classes <code>links</code>, <code>rechts</code> en <code>clear</code></li>
-            <li>menu-items naast elkaar ... met een beetje afstand ertussen + kleur van hyperlink pas bij achtergrondkleur header</li>            
-        </ul>
-    </section>
     <main>
-        <section id="6-down">
-        <figure>
-            <img src="7-down-6-to-go.jpg" alt="7 down, 6 to go!" style="width: 200px;">
-            <figcaption>Interneting is hard? 7 down - 6 to go!</figcaption>
-        </figure>
-    </section>
+        <style>
+            .start ul {
+                list-style-type: disc !important;
+                overflow: hidden;
+                height: 0;
+                transition: height 2s;
+            }
+            .start:hover ul {
+                height: 100px !important;
+                transition: height 2s;
+            }
+            .start ul li {
+                margin: 0px 25px;
+            }
+        </style>
+        <section class="start">
+            <h3>2. Start</h3>
+            <ul>
+                <li>Terugkijken en vooruitblik planning</li>
+                <li>Langslopen gemiste slides Les 4></li>
+                <li>Langslopen take aways Les 4</li>
+                <li>Langslopen <a href="../competenties">WebTech competenties</a></li>
+            </ul>
+        </section>
+        <style>
+            .demos ul {
+                list-style-type: disc !important;
+                overflow: hidden;
+                height: 0;
+                transition: height 2s;
+            }
+            .demos:hover ul {
+                height: 100px !important;
+                transition: height 2s;
+            }
+            .demos ul li {
+                margin: 0px 25px;
+            }
+        </style>    
+        <section class="demos">
+            <h3>3. Student demo's opdrachten Les 4</h3>
+            <ul>
+                <li style="list-style-type: none;"><h5>(niet weer Refai, Sander G., Wout of Ryan)</h5></li>
+                <li>footer met een &copy;... + vervangen <code>&lt;div&gt;</code> door <code>&lt;main&gt;</code> (ook CSS)</li>
+                <li>h1 selector veranderen naar combi-selector zodat deze alleen <em>&lt;h1&gt;</em> in <em>&lt;header&gt;</em> selecteert</li>
+                <li>classes <code>links</code>, <code>rechts</code> en <code>clear</code></li>
+                <li>menu-items naast elkaar ... met een beetje afstand ertussen + kleur van hyperlink pas bij achtergrondkleur header</li>            
+            </ul>
+        </section>
+        <style>
+            .six-down figure {
+                width: 0;
+                opacity: 0;
+                transition: height 2s, opacity 3s 1s;
+            }
+    
+            .six-down:hover figure {
+                width: 200px;
+                opacity: 1;
+                transition: height 2s;
+            }
+        </style>        
+        <section id="six-down">
+            <h3>4. Keeping score</h3>
+            <figure>
+                <img src="7-down-6-to-go.jpg" alt="7 down, 6 to go!">
+                <figcaption>Interneting is hard? 7 down - 6 to go!</figcaption>
+            </figure>
+        </section>
     </main>    
     <footer id="teh-footer">
         &copy <span id="currentYear">2017</span> - Me, myself and I
