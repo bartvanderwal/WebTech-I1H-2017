@@ -31,6 +31,7 @@
     </header>
     <style>
         .opdrachten ul {
+            list-style-type: disc !important;
             overflow: hidden;
             height: 0;
             transition: height 2s;
@@ -40,13 +41,16 @@
             height: 150px !important;
             transition: height 2s;
         }
+        .opdrachten ul li {
+            margin: 0px 25px;
+        }
     </style>
     <section class="opdrachten">
         <h3>2. Student demo's</h3>
         <ul>
-            <li><h5>(niet weer Refai, Ugur, Sander G. of Wout of Ryan)</h5></li>
-            <li>footer met een &copy;... + vervangen &lt;div&gt; door &lt;main&gt; (ook CSS)</li>
-            <li>h1 selector veranderen naar combi-selector zodat deze alleen <em>&;t;h1&gt;</em> in <em>&lt;header&gt;</em> selecteert</li>
+            <li style="list-style-type: none;"><h5>(niet weer Refai, Ugur, Sander G., Wout of Ryan)</h5></li>
+            <li>footer met een &copy;... + vervangen <code>&lt;div&gt;</code> door <code>&lt;main&gt;</code> (ook CSS)</li>
+            <li>h1 selector veranderen naar combi-selector zodat deze alleen <em>&lt;h1&gt;</em> in <em>&lt;header&gt;</em> selecteert</li>
             <li>classes <code>links</code>, <code>rechts</code> en <code>clear</code></li>
             <li>menu-items naast elkaar ... met een beetje afstand ertussen + kleur van hyperlink pas bij achtergrondkleur header</li>            
         </ul>
