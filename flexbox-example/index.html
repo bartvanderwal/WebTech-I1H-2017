@@ -17,6 +17,7 @@
             }
             img {
                 width: 40%;
+                height: 40%;
                 background-color: blue;
                 margin: 10px;
             }
@@ -25,6 +26,10 @@
                 display: flex;
                 margin: 10px auto;
                 max-width: 600px;
+            }
+            .container .column {
+                display: flex;
+                flex-wrap: wrap;
             }
             .separator {
                 border: 2px red solid;
@@ -37,16 +42,16 @@
     </head>
     <body>
         <div class="container">
-            <div class="column">
-                <img src="https://lorempixel.com/299/300/" alt="Main Image">
+            <div class="column" style="flex-direction: column;">
+                <img src="https://lorempixel.com/299/300/" alt="Main Image" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas nihil aspernatur.</p>
             </div>
             <div class="separator"></div>
             <div class="column">
-                <img src="https://lorempixel.com/299/301/" alt="Image 1">
-                <img src="https://lorempixel.com/299/299/" alt="Image 2">
-                <img src="https://lorempixel.com/300/299/" alt="Image 3">
-                <img src="https://lorempixel.com/300/300/" alt="Image 4">                
+                <img src="https://lorempixel.com/299/301/" alt="Image 1" />
+                <img src="https://lorempixel.com/299/299/" alt="Image 2" />
+                <img src="https://lorempixel.com/300/299/" alt="Image 3" />
+                <img src="https://lorempixel.com/300/300/" alt="Image 4" />                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos error nisi excepturi hic atque totam exercitationem ratione ipsam, tempora numquam dolore, laboriosam cupiditate consequuntur.</p>
             </div>
         </div>
