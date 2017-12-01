@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- 
+        • [x] velden voor naam, telefoon en e-mail
+        • [x] een keuzelijst met je projecten als opties en het label 'Project"
+        • [x] radiobuttons voor 'Interesse' met de opties 'inhoudelijk', 'samenwerking', 'advies'
+        • [ ] een groot tekstveld met het label 'Bericht'
+        • [x] een vinkveld om aan te geven of iemand teruggebeld wil worden 
+        • [ ] en uiteraard knoppen om te verzenden of te annuleren.  -->
+        <form action="get" id="contact">
+            <div class="veld">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" id="naam" required placeholder="naam..." />
+            </div>
+            <div class="veld">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" name="telefoon" size="11" id="telefoon" placeholder="telefoon..." />
+                <input type="checkbox" name="call-me-back" id="call-me-back" class="cmb">
+                <label for="call-me-back">Bel me terug</label>
+            </div>
+            <div class="veld" style="margin-top: 20px;">
+                <label></label>
+                <input type="reset" disabled value="Annuleren" style="background-color: red; color: white;"></input>
+                <input type="submit" value="Versturen"></input>
+            </div>
+            <div class="veld">
+                <label for="bericht">Bericht</label>
+                <textarea name="bericht" id="bericht" cols="40" rows="8">Tik hier iets...</textarea>
+            </div>
+        </form>          
+    </body>
+</html>

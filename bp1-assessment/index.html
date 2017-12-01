@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WebTech - Beroepsproduct 1 - Beoordelingsformulier</title>
+        <!--
+            <link rel="stylesheet" href="css/fontawesome-pro-solid.css">        
+            <link rel="stylesheet" href="css/fontawesome-pro-light.css">
+            <link rel="stylesheet" href="css/fontawesome-pro-core.css">
+        -->
+    </head>
+    <body>
+        <h1>WT Beoordeling: Beroep1 (statisch)</h1>
+        <br/>
+        <form >
+            <fieldsection name="whoswho">
+                <div class="veld">
+                    <label for="beoordelaar"><i class="fa fa-user"></i> Beoordelaar</label>
+                    <input name="beoordelaar" id="beoordelaar" type="text" placeholder="naam, docentcode" />
+                    <input name="student2" required id="student2" type="text" placeholder="student nummer" />:	        
+                </div>
+                <div class="veld">
+                    <label for="student1"><i class="fa fa-studiovinari"></i> Student 1</label>
+                    <input name="student1" required id="student1" type="text" placeholder="student naam" />:	
+                </div>
+                <div class="veld">
+                    <label for="student2"><i class="fa fa-studiovinari"></i> Student nummer</label>
+                    <input name="student2" required id="student2" type="text" placeholder="student naam" />:	
+                </div>
+            </fieldsection>
+            <div class="veld">
+                <label for="student2"><i class="fa fa-studiovinari"></i> Student 2</label>
+                <input name="student2" required id="student2" type="text" placeholder="student naam" />:	
+            </div>
+            <h2>Knockout</h2>
+            <img src="https://thumb1.shutterstock.com/display_pic_with_logo/2579356/316561433/stock-vector-pop-art-comics-icon-knockout-speech-bubble-vector-illustration-316561433.jpg" alt="Knockout">
+            Criteria
+            
+            
+            
+                Matig	Voldoende	Goed
+            Knock-out 
+            •	HTML-pagina valideert niet (https://validator.w3.org)
+            •	Gebruik gemaakt van framework, library of Javascript
+            •	Website draait niet zonder internetverbinding (externe afbeeldingen)
+            •	Niet alle (required) pagina’s geïmplementeerd (films, afbeeldingen, teksten), navigatie
+            Opleverdocument (5 punten)
+            •	Doelgroep en ontwerpkeuzes duidelijk beschreven	0
+            Geen document of te laat ingeleverd of doelgroep en ontwerpkeuzes hierin niet beschreven/beargumenteerd	2,5
+            Alleen doelgroep genoemd, maar geen ontwerpkeuzes of slechts deels of niet goed beargumenteerd	5
+            Doelgroep en ontwerpkeuzes (voorbeelden van kleuren, lettertype, typische kenmerken en een paar low - fidelity schetsen) duidelijk beargumenteerd.
+            Bestanden (10 punten)
+            •	Correcte bestandsnamen en mapnamen
+            (kleine letters, geen spaties, naam past bij inhoud)
+            •	Bestanden georganiseerd 
+            (de hele website staat binnen 1 websitemap, CSS, afbeeldingen en filmpjes in aparte submappen, geen 'vreemde' bestanden in de websitemap)
+            •	Index.html als homepage	0
+            Bestanden met spaties, hoofdletters en geen organisatie qua folder indeling (>10 bestanden in folder of <3 die ook elders hadden gekund).
+                5
+            Meeste bestandsnamen zijn redelijk beschrijvend en volgens de (SEO) conventies (zonder spaties en met streepjes (geen underscores) en kleine letters). Goede folderstructuur.	10
+            Alle bestandsnamen zijn zeer beschrijvend en volgens de conventies en logische en zelf beschrijvende folderstructuur (LIFT principes).
+            Inhoud (10 punten)
+            •	Op de site zelf is een doelgroep herkenbaar en/of benoemd
+            •	De inhoud van de pagina's klopt
+            •	Zinvolle kopjes en teksten
+            •	Navigatie
+            •	Formulier	0
+            Doelgroep is niet terug te zien, pagina’s bevatten ‘lorem ipsum’ of onlogische teksten. Veel te veel teksten of drukke plaatjes, navigatie is onduidelijk en er is geen of heel klein formulier	5
+            Doelgroep is herkenbaar. Inhoud grotendeels prima. Navigatie werkt overal. Teksten zijn goed en zonder (in het oog springende) stijl- of spelfouten.	10
+            Doelgroep is herkenbaar en benoemd. Idee is origineel en gemaakte pagina’s ‘markt klaar’ zonder veel aanpassingen.
+            Werkende én logische/consistente navigatie over alle pagina’s. Kopjes en teksten geen spelfouten.
+            HTML (30 punten)
+            •	Correcte basisstructuur (html, head, body)
+            •	Structurering content (met HTML5 structuurelementen gewerkt, hiërarchie kopjes, geen overbodige div's)
+            •	Formulier (labels, juiste elementen, attributen, volledig)
+            •	Menu (correcte structuur, ook zonder CSS, op alle pagina's, werkend)
+            •	Relatieve URL’s naar pagina's en media	0
+            Pagina’s in quirks mode, <div>itis, heel simpel of lelijk menu, afbeeldingen hebben geen alt tags, gebruik van afbeeldingen op externe URL’s.	15
+            Er zijn semantische tags gebruikt. Formulieren hebben netjes labels en zijn consistent uitgelijnd.
+            Menu ziet er prima uit.	30
+            Waar mogelijk zijn semantische tags gebruikt, <div>-jes en <span>s alleen in overige gevallen. Geen overbodige div’s, logische en consistente indentatie van HTML. Formulieren hebben naast labels ook placeholders en logische en rustige vormgeving en logische volgorde van velden. Waar toepasselijk al simpele (HTML) validatie en relevante HTML-input types zijn gebruikt, zoals ‘email’. Correct gebruik gemaakt van relatieve, root relative of absolute URL’s.
+            CSS (30 punten)
+            •	1 stylesheet voor alle basis
+            •	Geen dubbele styling (aanpassing in de basis.css moet op alle pagina's doorwerken)
+            •	Georganiseerde code
+            •	Gebruik gemaakt van slimme selectoren
+            •	Geen classitis (overbodig gebruik van classes)	0
+            Er is heel weinig styling, of veel styling duplicatie en inline styling. Er is veel duplicatie binnen css zelf, bv. selectoren. Ononderhoudbare css is gebruikt, bijvoorbeeld hele specifieke CSS properties op hele generieke tags (div { display: inline; })
+            CSS is duidelijk ge-copy-paste zonder begrip of controle.	15
+            Enkele externe stylesheet, maar wel veel overbodige styling voor bijvoorbeeld de landingspagina.
+            En/of hier en daar wat duplicatie of inline styling of niet gebruikte CSS, maar wel ook slimme en toepasselijke combi selectoren.	30
+            Logische opzet van externe stylesheet of evt. stylesheets bij zeer specifieke pagina’s.
+            Responsive design toepasselijk gebruikt (media queries), de site is mobile first en werkt op desktop en mobiel.
+            Toepasselijk gebruik flexbox. 
+            Minimale CSS, niet te lange selectoren, geen ID’s, evt. zelfs gebruik gemaakt van BEM (achtige) opzet.
+            Extra’s (15 punten)
+            •	Bijzonder mooie opmaak, afwerking, details
+            •	Geavanceerde CSS selectoren 
+            •	Geavanceerde styling 
+            •	Schone, zoekmachinevriendelijke HTML-code	0
+            Geen verdere bijzonderheden.	10
+            Paar in het oog springende features technisch of esthetisch zoals genoemd.	20
+            Originele styling, slimme SEO-trucs (noemen en motiveren in documentatie!), scoren op alle genoemde punten en/of extra wat constructies die de docent wellicht zelfs nog niet kent (CSS keyframe animaties, inline svg, toepasselijke én geteste metadata/microformats voor SEO of social), etc.
+            
+        </form>
+    </body>
+</html>

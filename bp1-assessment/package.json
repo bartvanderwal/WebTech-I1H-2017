@@ -1,0 +1,18 @@
+{
+  "name": "bp-1-assessment",
+  "version": "1.0.0",
+  "description": "Zelf-, peer- of docent assessment tool voor WebTech FletNix opdracht (BP1).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webtech",
+    "assessment"
+  ],
+  "author": "Bart van der Wal",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^0.0.21"
+  }
+}

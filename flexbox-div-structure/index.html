@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flexbox structure</title>
+        <style>
+            @media only screen and (max-width: 800px) {
+                /* Extra 'body' ervoor om regels specifieker te maken dan non media querie varianten. */
+                body .container {
+                    display: block;
+                }
+            }
+            body {
+                background-color: black;
+            }
+            img {
+                width: 40%;
+                background-color: blue;
+                margin: 10px;
+            }
+            .container {
+                background-color: white;
+                display: flex;
+                margin: 10px auto;
+                max-width: 600px;
+            }
+            .separator {
+                border: 2px red solid;
+                margin: 0 20px;
+            }
+            .column {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <img src="https://lorempixel.com/299/300/" alt="Main Image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptas nihil aspernatur.</p>
+            </div>
+            <div class="separator"></div>
+            <div class="column">
+                <img src="https://lorempixel.com/299/301/" alt="Image 1">
+                <img src="https://lorempixel.com/299/299/" alt="Image 2">
+                <img src="https://lorempixel.com/300/299/" alt="Image 3">
+                <img src="https://lorempixel.com/300/300/" alt="Image 4">                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos error nisi excepturi hic atque totam exercitationem ratione ipsam, tempora numquam dolore, laboriosam cupiditate consequuntur.</p>
+            </div>
+        </div>
+    </body>
+</html>

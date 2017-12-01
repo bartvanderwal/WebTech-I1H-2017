@@ -1,0 +1,17 @@
+.veld label:not(cmb) {
+    color: #4444aa;
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+.veld input:not(.cmb), .veld  textarea {
+    width: 100px;
+    border: 1px solid #4444aa;
+}
+
+@media only screen and (max-width: 400px) {
+    .veld label:not(cmb) {
+        display:block;
+        text-align: initial;
+    }
+}

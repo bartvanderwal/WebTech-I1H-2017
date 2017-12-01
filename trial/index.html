@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact formulier | Portfolio IT Off the Wall</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        • [x] velden voor naam, telefoon en e-mail
+        • [x] een keuzelijst met je projecten als opties en het label 'Project".
+        • [x] radiobuttons voor 'Interesse' met de opties 'inhoudelijk', 'samenwerking', 'advies'
+        • [x] een groot tekstveld met het label 'Bericht'
+        • [x] een vinkveld om aan te geven of iemand teruggebeld wil worden
+        • [x] en uiteraard knoppen om te verzenden of te annuleren.
+        • [x] Extra: Responsive: labels in een small scherm boven de velden staan en anders gewoon ervoor, in dezelfde regel (...)
+    -->
+    <style>
+        @media only screen and (max-width: 400px) {
+            .contact fieldset {
+                /* background-color: red !important; */
+                max-width: initial;
+            }
+            .contact label {
+                display: block;
+                text-align: initial !important;
+            }
+            .contact .radio {
+                display: block;
+            }
+        }
+
+        body {
+            font-family: 'Open Sans', serif;
+        }
+        .contact fieldset {
+            max-width: 400px;
+            margin: 10px auto;
+        }
+        .contact label:not(.bel-me-terug) {
+            color: #444488;
+            width: 60px;
+            text-align: right;
+        }
+        .contact input, .contact select {
+            margin: 5px 10px;
+            border-radius: 2px;
+            border: solid 1px #444488
+        }
+        .contact select {
+            border: 1px solid #444488;
+            border-radius: 2px;
+        }
+        .contact fieldset {
+            border: dotted 1px #444488;
+            padding: 20px;
+        }
+        .contact .radio label {
+            text-align: initial;
+            width: initial;
+        }
+        input[type=submit] {
+            float: right;
+            margin-right: 18px;
+        }
+    </style>
+    <form action="post" class="contact">
+        <fieldset>
+            <div class="form-field">
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" size="15" name="naam" placeholder="naam..." required oninvalid="this.setCustomValidity('Naam is verplicht')" />
+            </div>
+            <div class="form-field">                    
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" id="telefoon" size="11" name="telefoon" placeholder="telefoon..."/>
+                <input type="checkbox" id="bel-me-terug" name="bel-me-terug" />
+                <label for="bel-me-terug" class="bel-me-terug">Bel me terug</label>
+            </div>
+            <div class="form-field">
+                <label for="e-mail">E-mail</label>
+                <input type="email" size="50" id="e-mail" name="e-mail" placeholder="e-mail..." />
+            </div>
+            <div class="form-field">
+                <label for="project">Project</label>
+                <select required name="project" id="project" style="margin-left: 10px;">
+                    <option value="">Kies een project...</option>
+                    <option value="A">Project A</option>
+                    <option value="B">Project B</option>
+                    <option value="C">Project C</option>
+                    <option value="D">Project D</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Interesse</label>
+                <div class="radio">
+                    <input type="radio" name="interesse" id="inhoudelijk" />
+                    <label for="inhoudelijk">Inhoudelijk</label>
+                    <input type="radio" name="interesse" id="samenwerking" />
+                    <label for="samenwerking">Samenwerking</label>
+                    <input type="radio" name="interesse" id="advies" />
+                    <label for="advies">Advies</label>
+                </div>
+            </div>
+            <div class="form-field" style="margin-top: 30px;">
+                <label for="email">Bericht</label>
+                <textarea style="width: 95%; height: 50px; margin-top: 10px; border: solid 1px #444488;" name="" id="" required placeholder="Type hier je bericht..."></textarea>
+            </div>
+            <div class="form-field">
+                <input type="submit" style="float: right; margin-right: 18px; background-color:#444488; color: white;" value="Versturen!" />
+                <input type="reset" style="float: right; margin-right: 18px; background-color: #ff1111; color: white;" value="Annuleren" disabled/>                
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
