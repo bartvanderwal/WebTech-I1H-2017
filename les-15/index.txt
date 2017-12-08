@@ -1,0 +1,154 @@
+PHP basics - Variables, strings, doubles, float, concatenation
+
+1. Welke van onderstaande kan een PHP variabele zijn?
+A. a
+B. %b
+C. $c
+D. Al bovenstaande
+
+2. Wat is een geldige declaratie in PHP?
+A. $a = 1
+B. $b: int = 1;
+C. int $c = 1
+D. Al bovenstaande
+
+3. Wat is een geldige string assignment in PHP?
+A. $a = 'a';
+B. $b = "b";
+C. $c = $b;
+D. Al bovenstaande
+
+4. Hoe kun je een string interpolatie doen?
+A. echo Dit is a: . $a;
+B. echo 'Dit is a: $a';
+C. echo "Dit is a: $a";
+D. Al bovenstaande
+
+5. Hoe switch je in PHP (in elke versie) vanaf een stuk HTML naar commando's ingeven in code?
+A. <% echo "I like!"; // ...
+B. <?php echo "I like!"; // ...
+C. <?= echo "I like!"; // ...
+D. Al bovenstaande
+
+6. Hoe plak je twee strings achter elkaar in PHP?
+A. $a = 'string1 en' + ' string2';
+B. $bee = 'string 1 en' . "string 2";
+C. $cee = "string 1 en" && " string2";
+D. Al bovenstaande
+
+7. En hoe heet het achter elkaar plakken van twee strings?
+A. Additiveren
+B. Builden
+C. Concateneren
+D. Datariseren
+
+8. Hoe kun je twee getallen optellen in PHP?
+A. $a = 7 . 8;
+B. $b = 7 + 8;
+C. $c = add(7, 8);
+D. GEEN van bovenstaande
+
+9. Wat krijg je als een int en een double vermenigvuldigt?
+A. een int
+B. een double
+C. dat hangt ervan af
+D. dit kan niet
+
+10. Hoe kun je voorkomen dat je moet escapen als je de string 's Hertogenbosch op het scherm wilt zetten?
+
+$woonachtigTe = 'Ik woon in \'s Hertogenbosch';
+
+A. Enkele quotes gebruiken
+B. Dubbele quotes gebruiken
+C. Driedubbele quotes gebruiken
+D. Niet! Gewoon: 
+
+11. Bonus: Werkt het volgende ook in PHP? 
+
+$a = "Een string van karakters";
+echo($a);
+
+A. Jazeker
+B. Neen
+C. Soms
+D. Nee, maar console.log($a) wel!
+
+Array basics, Diving into arrays, forEach and breaking and continuing
+
+1. Wat is een array?
+A. Dit is een variabele die meerdere waarden kan bevatten
+B. Dit is een datatype in PHP
+C. Dit is een lijst van waarden in een bepaalde volgorde
+D. Al bovenstaande
+
+https://stackoverflow.com/questions/10914730/are-php-associative-arrays-ordered
+
+2. Hoe maak je in PHP een leeg array aan?
+A. $lijst = [];
+B. $lijst = {};
+C. $lijst = Array(null);
+D. $lijst = [null];
+
+3. Wat levert dit op??
+
+$erree = ['peter', 'margreet', 'billy'];
+echo $erree[3];
+
+A. peter
+B. margreet
+C. billy
+D. een "undefined offset" error
+
+4. Wat zijn hier keys en values?
+
+$erree = ['peter', 'margreet', 'billy'];
+
+A. De key is $erree, de values zijn 'peter', 'margreet' en 'billy'
+B. De keys zijn 0, 1 en 2, de values zijn 'peter', 'margreet' en 'billy'
+C. De keys zijn 'peter', 'margreet' en 'billy', $erree is de value
+D. Geen van bovenstaande
+
+5. Kun je in één en hetzelfde array zowel een string als een int als value zetten?
+
+$anArray = ['een string', 3.14, true, 65536];
+
+A. Nee, alleen dingen van zelfde type
+B. Nee, alleen ints en doubles samen
+C. Jazeker
+D. Ja, maar dan is het wel meteen een associated array
+
+6. Kun je een array in plaats van int als key ook een string als waarde gebruiken?
+A. Nee, alleen ints
+B. Ja, maar dan moeten alle keys van het array ook string zijn
+C. Jazeker, maar geen boolean
+D. Ja, maar dan is het wel meteen een associated array
+
+7. Welk van de volgende is correcte PHP?
+A. if true then echo "I like!" else echo "Wawaweewa";
+B. if (true) { echo "I like!"; } else { echo "Wawaweewa"; }
+C. if (false) echo "I like!"; else echo "Wawaweewa"
+D. Geen van bovenstaande
+
+8. Welk keyword heeft meer mogelijkheden, de for of de foreach in PHP?
+A. De for 
+B. De foreach
+C. Beide even krachtig
+D. Dat hangt af van aantal dimensies van je array
+
+9. Welk keyword heeft de voorkeur om te gebruiken om over alle items in een array te lopen?
+A. De for 
+B. De foreach
+C. Beide even krachtig
+D. Dat hangt af van aantal dimensies van je array
+
+10. Kun je een foreach ook gebruiken om over een associated array te lopen?
+A. Nee, dat kan alleen met for
+B. Nee, dat kan alleen met while
+C. Jazeker
+D. Dat hangt af van aantal dimensies van je array
+
+11. Bonus: Wat krijg je terug als je het volgende doet in PHP?? print_r("henk"=="henk");
+A. true
+B. false
+C. 1
+D. 0
